@@ -30,4 +30,7 @@ def download_from_firebase():
     destination_blob_name = f'blockX/comment_level_predict_model.h5'
     blob = bucket.blob(destination_blob_name)
     blob.download_to_filename("comment_level_predict_model.h5")
+    destination_blob_name = f'blockX/x_train.csv'
+    blob = bucket.blob(destination_blob_name)
+    blob.download_to_filename("x_train.csv")
     return
