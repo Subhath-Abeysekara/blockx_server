@@ -12,7 +12,11 @@ from wallet_registration import register
 
 app = Flask(__name__)
 CORS(app , resources={r"/":{"origins":"*"}})
-
+try:
+    download_from_firebase()
+    print("model_downloaded")
+except:
+    print("download error")
 @app.route("/")
 def main():
     return "hello world"
@@ -128,9 +132,4 @@ def wallet_transaction():
 
 if __name__ == '__main__':
     app.debug = True
-    try:
-        download_from_firebase()
-        print("model_downloaded")
-    except:
-        print("download error")
     app.run(host='localhost',port=5000)
