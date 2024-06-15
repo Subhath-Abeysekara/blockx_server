@@ -1,0 +1,605 @@
+{
+    "dev":{
+        "collections": {
+            "total": 1,
+            "collections": [
+                {
+                    "contractId": "ETH$0x8Cd8155e1af6AD31dd9Eec2cEd37e04145aCFCb3",
+                    "displayContractId": "0x8Cd8155e1af6AD31dd9Eec2cEd37e04145aCFCb3",
+                    "blockchain": "ethereum",
+                    "name": "Cupcats Official",
+                    "imageUrl": "https://d2gw43p0uf791w.cloudfront.net/ethereum/tokens/0x8Cd8155e1af6AD31dd9Eec2cEd37e04145aCFCb3/data/image.png",
+                    "previewImageUrl": "https://d2gw43p0uf791w.cloudfront.net/ethereum/tokens/0x8Cd8155e1af6AD31dd9Eec2cEd37e04145aCFCb3/data/previewImage.png",
+                    "symbol": "CUPCAT",
+                    "marketCap": "-",
+                    "marketCapChangePercentage": "-",
+                    "floorPrice": "-",
+                    "floorPriceChangePercentage": "-",
+                    "avgPrice": "-",
+                    "avgPriceChangePercentage": "-",
+                    "volume": "7615.19467306918",
+                    "volumeChangePercentage": "3.05027932960893",
+                    "sale": "-",
+                    "salesChangePercentage": "-",
+                    "twitter": "https://twitter.com/catsinthecups",
+                    "website": "https://www.catsinthecups.com/",
+                    "likeCount": 0,
+                    "tokenCount": 5009,
+                    "description": "",
+                    "displayOrder": 0,
+                    "displayType": "other",
+                    "categories": [
+                        "art"
+                    ],
+                    "url": "",
+                    "tokenStandard": "ERC721"
+                }
+            ]
+        },
+        "tokens":{
+             "total": 2,
+            "tokens": [
+                {
+                    "contractId": "ETH$0x8Cd8155e1af6AD31dd9Eec2cEd37e04145aCFCb3",
+                    "displayContractId": "0x8Cd8155e1af6AD31dd9Eec2cEd37e04145aCFCb3",
+                    "blockchain": "ethereum",
+                    "tokenURI": "https://dbsnaj2hjogvk.cloudfront.net/ethereum/tokens/0x8Cd8155e1af6AD31dd9Eec2cEd37e04145aCFCb3/1/OIreDnz1DHohuEH93IsZi.json",
+                    "rankId": 1,
+                    "name": "Cupcat 1",
+                    "imageUrl": "https://dbsnaj2hjogvk.cloudfront.net/ethereum/tokens/0x8Cd8155e1af6AD31dd9Eec2cEd37e04145aCFCb3/1/hcdB83bWuK8gmdbYtPHwT.png",
+                    "previewImageUrl": "https://dbsnaj2hjogvk.cloudfront.net/ethereum/tokens/0x8Cd8155e1af6AD31dd9Eec2cEd37e04145aCFCb3/1/9BZwpPursoWKseOomVIt5.png",
+                    "attributes": [
+                        {
+                            "value": "Green",
+                            "trait_type": "Background"
+                        },
+                        {
+                            "value": "Water",
+                            "trait_type": "Cat Fur"
+                        },
+                        {
+                            "value": "Drooling",
+                            "trait_type": "Mouth"
+                        },
+                        {
+                            "value": "Sunset",
+                            "trait_type": "Eyes"
+                        },
+                        {
+                            "value": "Flower tiara",
+                            "trait_type": "Head Accessory"
+                        },
+                        {
+                            "value": "none",
+                            "trait_type": "Eye Accessory"
+                        },
+                        {
+                            "value": "none",
+                            "trait_type": "In Cup Accessory"
+                        },
+                        {
+                            "value": "Coffee",
+                            "trait_type": "Cup"
+                        },
+                        {
+                            "value": "none",
+                            "trait_type": "Lucky charm"
+                        }
+                    ],
+                    "arToken": false,
+                    "likeCount": 0,
+                    "rarityScore": 0,
+                    "price": 0,
+                    "totalSupply": 1,
+                    "saleType": "not_for_sale",
+                    "tokenStandard": "ERC721",
+                    "collectionName": "Cupcat NFT",
+                    "videoUrl": "",
+                    "externalUrl": "https://www.catsinthecups.com",
+                    "animationUrl": "",
+                    "glbUrl": "",
+                    "usdzUrl": "",
+                    "category": [
+                        "photography"
+                    ],
+                    "tokenId": "1"
+                },
+                {
+                    "contractId": "ETH$0x8Cd8155e1af6AD31dd9Eec2cEd37e04145aCFCb3",
+                    "displayContractId": "0x8Cd8155e1af6AD31dd9Eec2cEd37e04145aCFCb3",
+                    "blockchain": "ethereum",
+                    "tokenURI": "https://dbsnaj2hjogvk.cloudfront.net/ethereum/tokens/0x8Cd8155e1af6AD31dd9Eec2cEd37e04145aCFCb3/10/OIreDnz1DHohuEH93IsZi.json",
+                    "rankId": 10,
+                    "name": "Cupcat 10",
+                    "imageUrl": "https://dbsnaj2hjogvk.cloudfront.net/ethereum/tokens/0x8Cd8155e1af6AD31dd9Eec2cEd37e04145aCFCb3/10/hcdB83bWuK8gmdbYtPHwT.png",
+                    "previewImageUrl": "https://dbsnaj2hjogvk.cloudfront.net/ethereum/tokens/0x8Cd8155e1af6AD31dd9Eec2cEd37e04145aCFCb3/10/9BZwpPursoWKseOomVIt5.png",
+                    "attributes": [
+                        {
+                            "value": "Red",
+                            "trait_type": "Background"
+                        },
+                        {
+                            "value": "Peach onigiri",
+                            "trait_type": "Cat Fur"
+                        },
+                        {
+                            "value": "Joyful",
+                            "trait_type": "Mouth"
+                        },
+                        {
+                            "value": "Tattooed",
+                            "trait_type": "Eyes"
+                        },
+                        {
+                            "value": "Cream and blueberry",
+                            "trait_type": "Head Accessory"
+                        },
+                        {
+                            "value": "Moss bandage",
+                            "trait_type": "Eye Accessory"
+                        },
+                        {
+                            "value": "none",
+                            "trait_type": "In Cup Accessory"
+                        },
+                        {
+                            "value": "Pink heart",
+                            "trait_type": "Cup"
+                        },
+                        {
+                            "value": "none",
+                            "trait_type": "Lucky charm"
+                        }
+                    ],
+                    "arToken": false,
+                    "likeCount": 0,
+                    "rarityScore": 0,
+                    "price": 0,
+                    "totalSupply": 1,
+                    "saleType": "not_for_sale",
+                    "tokenStandard": "ERC721",
+                    "collectionName": "Cupcat NFT",
+                    "videoUrl": "",
+                    "externalUrl": "https://www.catsinthecups.com",
+                    "animationUrl": "",
+                    "glbUrl": "",
+                    "usdzUrl": "",
+                    "category": [
+                        "photography"
+                    ],
+                    "tokenId": "10"
+                }
+            ]
+        }
+    },
+    "beta":{
+        "collections": {
+            "total": 1,
+            "collections": [
+                {
+                    "contractId": "ETH$0x8Cd8155e1af6AD31dd9Eec2cEd37e04145aCFCb3",
+                    "displayContractId": "0x8Cd8155e1af6AD31dd9Eec2cEd37e04145aCFCb3",
+                    "blockchain": "ethereum",
+                    "name": "Cupcats Official",
+                    "imageUrl": "https://d2gw43p0uf791w.cloudfront.net/ethereum/tokens/0x8Cd8155e1af6AD31dd9Eec2cEd37e04145aCFCb3/data/image.png",
+                    "previewImageUrl": "https://d2gw43p0uf791w.cloudfront.net/ethereum/tokens/0x8Cd8155e1af6AD31dd9Eec2cEd37e04145aCFCb3/data/previewImage.png",
+                    "symbol": "CUPCAT",
+                    "marketCap": "-",
+                    "marketCapChangePercentage": "-",
+                    "floorPrice": "-",
+                    "floorPriceChangePercentage": "-",
+                    "avgPrice": "-",
+                    "avgPriceChangePercentage": "-",
+                    "volume": "7615.19467306918",
+                    "volumeChangePercentage": "3.05027932960893",
+                    "sale": "-",
+                    "salesChangePercentage": "-",
+                    "twitter": "https://twitter.com/catsinthecups",
+                    "website": "https://www.catsinthecups.com/",
+                    "likeCount": 0,
+                    "tokenCount": 5009,
+                    "description": "",
+                    "displayOrder": 0,
+                    "displayType": "other",
+                    "categories": [
+                        "art"
+                    ],
+                    "url": "",
+                    "tokenStandard": "ERC721"
+                }
+            ]
+        },
+        "tokens":{
+             "total": 3983,
+            "tokens": [
+                {
+                    "contractId": "ETH$0x8Cd8155e1af6AD31dd9Eec2cEd37e04145aCFCb3",
+                    "displayContractId": "0x8Cd8155e1af6AD31dd9Eec2cEd37e04145aCFCb3",
+                    "blockchain": "ethereum",
+                    "tokenURI": "https://dbsnaj2hjogvk.cloudfront.net/ethereum/tokens/0x8Cd8155e1af6AD31dd9Eec2cEd37e04145aCFCb3/1/OIreDnz1DHohuEH93IsZi.json",
+                    "rankId": 1,
+                    "name": "Cupcat 1",
+                    "imageUrl": "https://dbsnaj2hjogvk.cloudfront.net/ethereum/tokens/0x8Cd8155e1af6AD31dd9Eec2cEd37e04145aCFCb3/1/hcdB83bWuK8gmdbYtPHwT.png",
+                    "previewImageUrl": "https://dbsnaj2hjogvk.cloudfront.net/ethereum/tokens/0x8Cd8155e1af6AD31dd9Eec2cEd37e04145aCFCb3/1/9BZwpPursoWKseOomVIt5.png",
+                    "attributes": [
+                        {
+                            "value": "Green",
+                            "trait_type": "Background"
+                        },
+                        {
+                            "value": "Water",
+                            "trait_type": "Cat Fur"
+                        },
+                        {
+                            "value": "Drooling",
+                            "trait_type": "Mouth"
+                        },
+                        {
+                            "value": "Sunset",
+                            "trait_type": "Eyes"
+                        },
+                        {
+                            "value": "Flower tiara",
+                            "trait_type": "Head Accessory"
+                        },
+                        {
+                            "value": "none",
+                            "trait_type": "Eye Accessory"
+                        },
+                        {
+                            "value": "none",
+                            "trait_type": "In Cup Accessory"
+                        },
+                        {
+                            "value": "Coffee",
+                            "trait_type": "Cup"
+                        },
+                        {
+                            "value": "none",
+                            "trait_type": "Lucky charm"
+                        }
+                    ],
+                    "arToken": false,
+                    "likeCount": 0,
+                    "rarityScore": 0,
+                    "price": 0,
+                    "totalSupply": 1,
+                    "saleType": "not_for_sale",
+                    "tokenStandard": "ERC721",
+                    "collectionName": "Cupcat NFT",
+                    "videoUrl": "",
+                    "externalUrl": "https://www.catsinthecups.com",
+                    "animationUrl": "",
+                    "glbUrl": "",
+                    "usdzUrl": "",
+                    "category": [
+                        "photography"
+                    ],
+                    "tokenId": "1"
+                },
+                {
+                    "contractId": "ETH$0x8Cd8155e1af6AD31dd9Eec2cEd37e04145aCFCb3",
+                    "displayContractId": "0x8Cd8155e1af6AD31dd9Eec2cEd37e04145aCFCb3",
+                    "blockchain": "ethereum",
+                    "tokenURI": "https://dbsnaj2hjogvk.cloudfront.net/ethereum/tokens/0x8Cd8155e1af6AD31dd9Eec2cEd37e04145aCFCb3/10/OIreDnz1DHohuEH93IsZi.json",
+                    "rankId": 10,
+                    "name": "Cupcat 10",
+                    "imageUrl": "https://dbsnaj2hjogvk.cloudfront.net/ethereum/tokens/0x8Cd8155e1af6AD31dd9Eec2cEd37e04145aCFCb3/10/hcdB83bWuK8gmdbYtPHwT.png",
+                    "previewImageUrl": "https://dbsnaj2hjogvk.cloudfront.net/ethereum/tokens/0x8Cd8155e1af6AD31dd9Eec2cEd37e04145aCFCb3/10/9BZwpPursoWKseOomVIt5.png",
+                    "attributes": [
+                        {
+                            "value": "Red",
+                            "trait_type": "Background"
+                        },
+                        {
+                            "value": "Peach onigiri",
+                            "trait_type": "Cat Fur"
+                        },
+                        {
+                            "value": "Joyful",
+                            "trait_type": "Mouth"
+                        },
+                        {
+                            "value": "Tattooed",
+                            "trait_type": "Eyes"
+                        },
+                        {
+                            "value": "Cream and blueberry",
+                            "trait_type": "Head Accessory"
+                        },
+                        {
+                            "value": "Moss bandage",
+                            "trait_type": "Eye Accessory"
+                        },
+                        {
+                            "value": "none",
+                            "trait_type": "In Cup Accessory"
+                        },
+                        {
+                            "value": "Pink heart",
+                            "trait_type": "Cup"
+                        },
+                        {
+                            "value": "none",
+                            "trait_type": "Lucky charm"
+                        }
+                    ],
+                    "arToken": false,
+                    "likeCount": 0,
+                    "rarityScore": 0,
+                    "price": 0,
+                    "totalSupply": 1,
+                    "saleType": "not_for_sale",
+                    "tokenStandard": "ERC721",
+                    "collectionName": "Cupcat NFT",
+                    "videoUrl": "",
+                    "externalUrl": "https://www.catsinthecups.com",
+                    "animationUrl": "",
+                    "glbUrl": "",
+                    "usdzUrl": "",
+                    "category": [
+                        "photography"
+                    ],
+                    "tokenId": "10"
+                }
+            ]
+        }
+    },
+    "prod":{
+        "collections":{
+            "total":3,
+            "collections":[
+                {
+                    "contractId": "AVAL$0x001e68282d52dcaba3749291bac33a9678073d01",
+                    "displayContractId": "0x001e68282d52dcaba3749291bac33a9678073d01",
+                    "blockchain": "avalanche",
+                    "name": "Pizza Game Chefs",
+                    "imageUrl": "https://d22w2baf40jlod.cloudfront.net/avalanche/tokens/0x001e68282d52dcaba3749291bac33a9678073d01/data/image.png",
+                    "previewImageUrl": "https://d22w2baf40jlod.cloudfront.net/avalanche/tokens/0x001e68282d52dcaba3749291bac33a9678073d01/data/previewImage.png",
+                    "symbol": "PIZZA-GAME-CHEF",
+                    "marketCap": "-",
+                    "marketCapChangePercentage": "-",
+                    "floorPrice": "-",
+                    "floorPriceChangePercentage": "-",
+                    "avgPrice": "-",
+                    "avgPriceChangePercentage": "-",
+                    "volume": "2047708.886",
+                    "volumeChangePercentage": "-",
+                    "sale": "-",
+                    "salesChangePercentage": "-",
+                    "twitter": "https://twitter.com/pizzadotgame",
+                    "website": "https://pizza.game/",
+                    "likeCount": 0,
+                    "tokenCount": 19990,
+                    "description": "Pizza Game is a decentralized remake of our favorite childhood online game, Cookie Clicker. We decided to take a simple game loved by all and make it play to earn. After weeks of hard work, it is finally time to reveal the rules to this classic, addicting, incremental childhood game! In order to play Pizza Game you must purchase a Pizza Chef and stake them on our website (coming soon). Chefs produce $Pizza every minute that you can claim and use to purchase upgrades. Chefs will be sold through our NFT drop and will be your golden ticket to the Pizza Game.",
+                    "displayOrder": 0,
+                    "displayType": "other",
+                    "categories": [
+                        "photography"
+                    ],
+                    "url": "",
+                    "tokenStandard": "ERC721",
+                    "tokens": []
+                },
+                {
+                    "contractId": "AVAL$0x00f5d01d86008d14d04e29efe88dffc75a9cac47",
+                    "displayContractId": "0x00f5d01d86008d14d04e29efe88dffc75a9cac47",
+                    "blockchain": "avalanche",
+                    "name": "FarmLand",
+                    "imageUrl": "https://d22w2baf40jlod.cloudfront.net/avalanche/tokens/0x00f5d01d86008d14d04e29efe88dffc75a9cac47/data/image.png",
+                    "previewImageUrl": "https://d22w2baf40jlod.cloudfront.net/avalanche/tokens/0x00f5d01d86008d14d04e29efe88dffc75a9cac47/data/previewImage.png",
+                    "symbol": "FarmLand",
+                    "marketCap": "-",
+                    "marketCapChangePercentage": "-",
+                    "floorPrice": "-",
+                    "floorPriceChangePercentage": "-",
+                    "avgPrice": "-",
+                    "avgPriceChangePercentage": "-",
+                    "volume": "59776.8372",
+                    "volumeChangePercentage": "-",
+                    "sale": "-",
+                    "salesChangePercentage": "-",
+                    "twitter": "https://twitter.com/chikn_nft",
+                    "website": "https://chikn.farm/",
+                    "likeCount": 0,
+                    "tokenCount": 5000,
+                    "description": "Chikn lays $EGG. Everybody knows it - it's basic biology",
+                    "displayOrder": 0,
+                    "displayType": "other",
+                    "categories": [
+                        "photography"
+                    ],
+                    "url": "",
+                    "tokenStandard": "ERC721",
+                    "tokens": []
+                },
+                {
+                    "contractId": "AVAL$0x017F688d3157755681852F89377AB84C86583313",
+                    "displayContractId": "0x017F688d3157755681852F89377AB84C86583313",
+                    "blockchain": "avalanche",
+                    "name": "Miloš Pantović BOC Base Red S3-21 Uncommon",
+                    "imageUrl": "https://d22w2baf40jlod.cloudfront.net/avalanche/tokens/0x017F688d3157755681852F89377AB84C86583313/data/image.png",
+                    "previewImageUrl": "https://d22w2baf40jlod.cloudfront.net/avalanche/tokens/0x017F688d3157755681852F89377AB84C86583313/data/previewImage.png",
+                    "symbol": "BUND-21TS3-U-BS3-21-S-RED",
+                    "marketCap": "-",
+                    "marketCapChangePercentage": "-",
+                    "floorPrice": "-",
+                    "floorPriceChangePercentage": "-",
+                    "avgPrice": "-",
+                    "avgPriceChangePercentage": "-",
+                    "volume": "0",
+                    "volumeChangePercentage": "-",
+                    "sale": "-",
+                    "salesChangePercentage": "-",
+                    "twitter": "",
+                    "website": "",
+                    "likeCount": 0,
+                    "tokenCount": 128,
+                    "description": "",
+                    "displayOrder": 0,
+                    "displayType": "other",
+                    "categories": [
+                        "photography"
+                    ],
+                    "url": "",
+                    "tokenStandard": "ERC721",
+                    "tokens": []
+                }
+            ]
+        },
+        "tokens":{
+            "total":3,
+            "tokens":[
+                {
+                    "contractId": "ETH$0x40Cf6a63C35B6886421988871F6b74cC86309940",
+                    "displayContractId": "0x40Cf6a63C35B6886421988871F6b74cC86309940",
+                    "blockchain": "ethereum",
+                    "tokenURI": "https://d22w2baf40jlod.cloudfront.net/ethereum/tokens/0x40Cf6a63C35B6886421988871F6b74cC86309940/1/TRribns7UV9yWQgQ2mb8-.json",
+                    "rankId": 1,
+                    "name": "HOWLERZ #2096",
+                    "imageUrl": "https://d22w2baf40jlod.cloudfront.net/ethereum/tokens/0x40Cf6a63C35B6886421988871F6b74cC86309940/1/7LfQrlolP1K-t_Yw2jF8m.png",
+                    "previewImageUrl": "https://d22w2baf40jlod.cloudfront.net/ethereum/tokens/0x40Cf6a63C35B6886421988871F6b74cC86309940/1/9Xd7wSQzxMxBOA6IMPHT2.png",
+                    "attributes": [
+                        {
+                            "value": "Armor",
+                            "trait_type": "Outfit"
+                        },
+                        {
+                            "value": "Halo",
+                            "trait_type": "Hat"
+                        },
+                        {
+                            "value": "VR",
+                            "trait_type": "Eyes"
+                        },
+                        {
+                            "value": "Green",
+                            "trait_type": "Background"
+                        },
+                        {
+                            "value": "Standard - Blue",
+                            "trait_type": "Type"
+                        }
+                    ],
+                    "arToken": false,
+                    "likeCount": 0,
+                    "rarityScore": 0,
+                    "price": 0,
+                    "totalSupply": 1,
+                    "saleType": "not_for_sale",
+                    "tokenStandard": "ERC721",
+                    "collectionName": "HOWLERZ",
+                    "videoUrl": "",
+                    "externalUrl": "https://howlerz.io",
+                    "animationUrl": "",
+                    "glbUrl": "",
+                    "usdzUrl": "",
+                    "category": [
+                        "photography"
+                    ],
+                    "tokenId": "1"
+                },
+                {
+                    "contractId": "ETH$0x40Cf6a63C35B6886421988871F6b74cC86309940",
+                    "displayContractId": "0x40Cf6a63C35B6886421988871F6b74cC86309940",
+                    "blockchain": "ethereum",
+                    "tokenURI": "https://d22w2baf40jlod.cloudfront.net/ethereum/tokens/0x40Cf6a63C35B6886421988871F6b74cC86309940/10/TRribns7UV9yWQgQ2mb8-.json",
+                    "rankId": 10,
+                    "name": "HOWLERZ #2105",
+                    "imageUrl": "https://d22w2baf40jlod.cloudfront.net/ethereum/tokens/0x40Cf6a63C35B6886421988871F6b74cC86309940/10/7LfQrlolP1K-t_Yw2jF8m.png",
+                    "previewImageUrl": "https://d22w2baf40jlod.cloudfront.net/ethereum/tokens/0x40Cf6a63C35B6886421988871F6b74cC86309940/10/9Xd7wSQzxMxBOA6IMPHT2.png",
+                    "attributes": [
+                        {
+                            "value": "Clock Necklace",
+                            "trait_type": "Outfit"
+                        },
+                        {
+                            "value": "XX",
+                            "trait_type": "Eyes"
+                        },
+                        {
+                            "value": "Wavy Blue and Grey",
+                            "trait_type": "Background"
+                        },
+                        {
+                            "value": "Standard - Blue",
+                            "trait_type": "Type"
+                        }
+                    ],
+                    "arToken": false,
+                    "likeCount": 0,
+                    "rarityScore": 0,
+                    "price": 0,
+                    "totalSupply": 1,
+                    "saleType": "not_for_sale",
+                    "tokenStandard": "ERC721",
+                    "collectionName": "HOWLERZ",
+                    "videoUrl": "",
+                    "externalUrl": "https://howlerz.io",
+                    "animationUrl": "",
+                    "glbUrl": "",
+                    "usdzUrl": "",
+                    "category": [
+                        "photography"
+                    ],
+                    "tokenId": "10"
+                },
+                {
+                    "contractId": "ETH$0x40Cf6a63C35B6886421988871F6b74cC86309940",
+                    "displayContractId": "0x40Cf6a63C35B6886421988871F6b74cC86309940",
+                    "blockchain": "ethereum",
+                    "tokenURI": "https://d22w2baf40jlod.cloudfront.net/ethereum/tokens/0x40Cf6a63C35B6886421988871F6b74cC86309940/100/TRribns7UV9yWQgQ2mb8-.json",
+                    "rankId": 100,
+                    "name": "HOWLERZ #2195",
+                    "imageUrl": "https://d22w2baf40jlod.cloudfront.net/ethereum/tokens/0x40Cf6a63C35B6886421988871F6b74cC86309940/100/7LfQrlolP1K-t_Yw2jF8m.png",
+                    "previewImageUrl": "https://d22w2baf40jlod.cloudfront.net/ethereum/tokens/0x40Cf6a63C35B6886421988871F6b74cC86309940/100/9Xd7wSQzxMxBOA6IMPHT2.png",
+                    "attributes": [
+                        {
+                            "value": "Leather Jacket",
+                            "trait_type": "Outfit"
+                        },
+                        {
+                            "value": "Black Hat",
+                            "trait_type": "Hat"
+                        },
+                        {
+                            "value": "Crazy Glasses",
+                            "trait_type": "Eyes"
+                        },
+                        {
+                            "value": "Katana",
+                            "trait_type": "Back Bling"
+                        },
+                        {
+                            "value": "Mustard",
+                            "trait_type": "Background"
+                        },
+                        {
+                            "value": "Standard - Yellow",
+                            "trait_type": "Type"
+                        }
+                    ],
+                    "arToken": false,
+                    "likeCount": 0,
+                    "rarityScore": 0,
+                    "price": 0,
+                    "totalSupply": 1,
+                    "saleType": "not_for_sale",
+                    "tokenStandard": "ERC721",
+                    "collectionName": "HOWLERZ",
+                    "videoUrl": "",
+                    "externalUrl": "https://howlerz.io",
+                    "animationUrl": "",
+                    "glbUrl": "",
+                    "usdzUrl": "",
+                    "category": [
+                        "photography"
+                    ],
+                    "tokenId": "100"
+                }
+            ]
+        }
+    }
+    
+   
+}
