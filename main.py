@@ -152,7 +152,7 @@ def get_blockchain():
 
 @app.route("/wallet/get_validation_requests", methods=["POST"])
 @cross_origin()
-def get_blockchain():
+def get_validation_requests():
     try:
         return get_validates(request=request)
     except Exception as e:
@@ -163,7 +163,7 @@ def get_blockchain():
 
 @app.route("/wallet/validate_request", methods=["POST"])
 @cross_origin()
-def get_blockchain():
+def validate_request():
     try:
         return validate_transaction(request)
     except Exception as e:
