@@ -50,9 +50,9 @@ def do_transaction(private_key , reciever_public_key , amount , transferer_publi
     json_str = json.dumps(transaction)
     transaction_data = json_str.encode('utf-8')
     pem_private_key = f"""
-    -----BEGIN EC PRIVATE KEY-----
-    {private_key}
-    -----END EC PRIVATE KEY-----
+-----BEGIN EC PRIVATE KEY-----
+{private_key}
+-----END EC PRIVATE KEY-----
             """
     print(pem_private_key)
     private_key = serialization.load_pem_private_key(
@@ -102,6 +102,30 @@ def select_nodes(public_key):
         "data": {
             'contract_id': "contract",
             "parameters": {'public_key':public_key}
+        }
+    })
+    return start_client(message=message)
+
+def store_transaction(block):
+    message = str({
+        'headers': {
+            "method": "store_block"
+        },
+        "data": {
+            'contract_id': "contract",
+            "parameters": {'block':block}
+        }
+    })
+    return start_client(message=message)
+
+def get_chain(public_key):
+    message = str({
+        'headers': {
+            "method": "get_chain"
+        },
+        "data": {
+            'contract_id': "contract",
+            "parameters": public_key
         }
     })
     return start_client(message=message)

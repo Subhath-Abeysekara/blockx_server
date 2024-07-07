@@ -83,3 +83,9 @@ def get_requests(request):
             user_requests.append(request)
     return format_docs(user_requests)
 
+def check_request_time():
+    token_requests = collection_name.find()
+    for request in token_requests:
+        if time.time() > request['expire_time']:
+            collection_name.delete_one({'_id':request['_id']})
+

@@ -32,6 +32,11 @@ def connect_mongo_requests():
     collection_name = db_Name["requests"]
     return collection_name
 
+def connect_mongo_validation_requests():
+    db_Name = client['blocx']
+    collection_name = db_Name["validation_requests"]
+    return collection_name
+
 # collection_name = connect_mongo_user()
 # # data = {
 # #     "name":"subhath"

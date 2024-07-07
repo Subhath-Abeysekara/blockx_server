@@ -1,3 +1,4 @@
+from apscheduler.schedulers.background import BackgroundScheduler
 from flask import Flask,request
 from flask_cors import CORS , cross_origin
 
@@ -6,9 +7,11 @@ from check_post_content import check_image
 from firebase_model_download import download_from_firebase
 from posts import add_post, get_user_post, get_user_eligible_post, add_comment
 from request import request_tokens, get_requests
+from scheduler import scheduler_operation
 from user import get_profile_data
 from user_account_score import user_acount_score_calculate
 from wallet_registration import register
+from wallet_transaction import validate_transaction, get_validates, get_chain_blocks, add_validation
 
 app = Flask(__name__)
 CORS(app , resources={r"/":{"origins":"*"}})
@@ -17,6 +20,11 @@ try:
     print("model_downloaded")
 except:
     print("download error")
+
+
+scheduler = BackgroundScheduler()
+scheduler.add_job(scheduler_operation, trigger='interval', seconds=43200)
+scheduler.start()
 @app.route("/")
 def main():
     return "hello world"
@@ -122,8 +130,42 @@ def wallet_transaction():
         private_key = data['private_key']
         reciever_public_key = data['reciever_public_key']
         transferer_public_key = data['transferer_public_key']
+        request_id = data['request_id']
         amount = data['amount']
-        return do_transaction(private_key , reciever_public_key , amount , transferer_public_key)
+        return add_validation(private_key , reciever_public_key , amount , transferer_public_key , request_id=request_id)
+    except Exception as e:
+        return {
+            'state':False,
+            'error':str(e)
+        }
+
+@app.route("/wallet/get_chain", methods=["POST"])
+@cross_origin()
+def get_blockchain():
+    try:
+        return get_chain_blocks(request=request)
+    except Exception as e:
+        return {
+            'state':False,
+            'error':str(e)
+        }
+
+@app.route("/wallet/get_validation_requests", methods=["POST"])
+@cross_origin()
+def get_blockchain():
+    try:
+        return get_validates(request=request)
+    except Exception as e:
+        return {
+            'state':False,
+            'error':str(e)
+        }
+
+@app.route("/wallet/validate_request", methods=["POST"])
+@cross_origin()
+def get_blockchain():
+    try:
+        return validate_transaction(request)
     except Exception as e:
         return {
             'state':False,
