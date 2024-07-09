@@ -119,6 +119,7 @@ def store_transaction(block):
     return start_client(message=message)
 
 def get_chain(public_key):
+    public_key = public_key.replace("/", "")
     message = str({
         'headers': {
             "method": "get_chain"
