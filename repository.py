@@ -13,7 +13,7 @@ input = {
 
 registration_body ={
     "project_code":env.PROJECT_CODE,
-    "email": "abeysekarasdp_blockx@gmail.com",
+    "email": "pulinitilanka_blockx@gmail.com",
     "password": "123456789",
     "email_confirmed": True,
     "admin_confirmed": True,

@@ -17,6 +17,7 @@ def add_validation(private_key , reciever_public_key , amount , transferer_publi
             "validated_keys":[]
         }
         collection_name_validation.insert_one(validation_request)
+        return response
     except:
         return response
 

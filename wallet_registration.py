@@ -18,6 +18,7 @@ def register(request):
             document['public_key'] = public_key
             print(document)
             collection_name.update_one({'_id': document['_id']},{'$set': document})
+            print(data)
             return data
     return {
         'state':False,
