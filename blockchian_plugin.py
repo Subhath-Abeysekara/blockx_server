@@ -12,7 +12,7 @@ def start_client(message):
         port = 12345
         client_socket.connect((host, port))
         client_socket.send(message.encode('utf-8'))
-        response = client_socket.recv(1024).decode('utf-8')
+        response = client_socket.recv(4096).decode('utf-8')
         print(f"Received from server: {response}")
         response = json.loads(response)
         return response

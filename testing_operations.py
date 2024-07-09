@@ -1,4 +1,4 @@
-from blockchian_plugin import login_user
+from blockchian_plugin import login_user, get_chain
 from wallet_transaction import add_validation
 
 
@@ -16,4 +16,8 @@ def test_transaction():
     res =  add_validation(private_key, reciever_public_key, amount, transferer_public_key, request_id=request_id)
     print(res)
 
-test_transaction()
+def get_chain_():
+    res = get_chain("MFYwEAYHKoZIzj0CAQYFK4EEAAoDQgAEwhYr+Ggz0xDTS1Q4SYdoSwgHxdz22OPBETsJUcS6eCi4eG9NDva0xDzDLlNThS0JicPf05CyKVdXfjDZ153wKw==")
+    print(res)
+
+# get_chain_()
