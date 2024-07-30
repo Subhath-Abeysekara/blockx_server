@@ -34,10 +34,13 @@ def get_validates(request):
 
 def validate_transaction(request):
     body = request.json
+    print(body)
     public_key = body['public_key']
     validation_id = body['validation_id']
     validation = collection_name_validation.find_one({'_id':ObjectId(validation_id)})
+    print(validation)
     validated_keys = validation['validated_keys']
+    print(validated_keys)
     validated_keys.append(public_key)
     collection_name_validation.update_one({'_id':ObjectId(validation_id)},{'$set':{'validated_keys':validated_keys}})
     return {

@@ -1,8 +1,10 @@
 import datetime
+import threading
 import time
 from collections import defaultdict
-
+lock = threading.Lock()
 from blockchian_plugin import select_nodes
+from cache import set_id, get_cache, add_cache
 from check_post_content import check_image
 from common import format_docs, format_doc
 from posts import get_post_comments
@@ -21,9 +23,13 @@ def get_predictions(user_ids):
         scores[user_id] = score
     return scores
 
-def request_tokens(request):
-    user_public_key = check_blockchain_registration(request)
-    body = request.json
+def token_request_operation(data):
+    time.sleep(5)
+    print("start_thread_ops")
+    user_public_key = data['user_public_key']
+    request = data['request']
+    body = data['body']
+    id = data['id']
     res = select_nodes(user_public_key)
     print(res)
     public_keys = res['public_keys']
@@ -35,7 +41,7 @@ def request_tokens(request):
     comments = get_post_comments(post_id=body['post_id'])
     detected_comments = detect_comments(comments)
     print(detected_comments)
-    user_ids = list(map(lambda comment: comment['user_id'] , detected_comments))
+    user_ids = list(map(lambda comment: comment['user_id'], detected_comments))
     print(user_ids)
     user_ids = list(set(user_ids))
     scores = get_predictions(user_ids)
@@ -50,27 +56,50 @@ def request_tokens(request):
         user_ids = grouped_user_ids[item]
         total_score = sum(map(lambda x: scores[x], user_ids))
         comment_level[item] = {
-            'total_score':total_score,
-            'average':total_score / len(user_ids),
-            'comments':len(user_ids)
+            'total_score': total_score,
+            'average': total_score / len(user_ids),
+            'comments': len(user_ids)
         }
     print(comment_level)
     guidance = {
-        "user_score":user_score,
-        "post_grade":post[0],
-        "comment_level":comment_level,
-        "post_id":body['post_id'],
-        "public_keys":public_keys,
-        "user_public_key":user_public_key,
+        "user_score": user_score,
+        "post_grade": post[0],
+        "comment_level": comment_level,
+        "post_id": body['post_id'],
+        "public_keys": public_keys,
+        "user_public_key": user_public_key,
         "expire_time": time.time() + 3600 * 24 * 7,
-        "time_stamp" : datetime.datetime.today()
+        "time_stamp": datetime.datetime.today()
     }
     collection_name.insert_one(guidance)
     print(guidance)
-    return {
-        "state":True,
-        "guidance":format_doc(guidance)
+    response_document =  {
+        "state": True,
+        "guidance": "format_doc(guidance)"
     }
+    add_cache(response_document, id)
+    return
+
+def request_tokens(request):
+    user_public_key = check_blockchain_registration(request)
+    body = request.json
+    id = body['id']
+    if id == 0:
+        id = set_id()
+        data = {
+            'id':id,
+            'user_public_key':user_public_key,
+            'request':request,
+            'body':body
+        }
+        t2 = threading.Thread(target=token_request_operation , args=(data,))
+        t2.start()
+        return {
+            "state": True,
+            "id": id
+        }
+    else:
+        return get_cache(id)
 
 def get_requests(request):
     body = request.json
