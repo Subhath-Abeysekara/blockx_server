@@ -17,13 +17,18 @@ def start_client(message):
         response = json.loads(response)
         return response
 
+def get_pem_data():
+    with open('private_key.pem', 'rb') as file:
+        pem_data = file.read()
+    return pem_data.decode('utf-8')
+
 def register_user():
     message = str({
         'headers': {
             "method": "add_node"
         },
         "data": {
-            'contract_id': "contract",
+            'pem_data': get_pem_data(),
         }
     })
     return start_client(message=message)
@@ -34,7 +39,7 @@ def login_user(private_key):
             "method": "log_user"
         },
         "data": {
-            'contract_id': "contract",
+            'pem_data': get_pem_data(),
             "parameters": private_key
         }
     })
@@ -88,7 +93,7 @@ def do_transaction(private_key , reciever_public_key , amount , transferer_publi
             "method":"transfer_tokens"
         },
         "data": {
-            'contract_id': "contract",
+            'pem_data': get_pem_data(),
             "parameters":parameter
         }
     })
@@ -100,7 +105,7 @@ def select_nodes(public_key):
             "method": "select_nodes"
         },
         "data": {
-            'contract_id': "contract",
+            'pem_data': get_pem_data(),
             "parameters": {'public_key':public_key}
         }
     })
@@ -112,7 +117,7 @@ def store_transaction(block):
             "method": "store_block"
         },
         "data": {
-            'contract_id': "contract",
+            'pem_data': get_pem_data(),
             "parameters": {'block':block}
         }
     })
@@ -125,7 +130,7 @@ def get_chain(public_key):
             "method": "get_chain"
         },
         "data": {
-            'contract_id': "contract",
+            'pem_data': get_pem_data(),
             "parameters": public_key
         }
     })

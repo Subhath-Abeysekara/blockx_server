@@ -6,7 +6,7 @@ from blockchian_plugin import start_client, login_user, do_transaction
 from check_post_content import check_image
 from firebase_model_download import download_from_firebase
 from posts import add_post, get_user_post, get_user_eligible_post, add_comment
-from request import request_tokens, get_requests
+from request import request_tokens, get_requests, get_id, get_request_response
 from scheduler import scheduler_operation
 from user import get_profile_data
 from user_account_score import user_acount_score_calculate
@@ -59,6 +59,17 @@ def image_upload_undefined():
 @cross_origin()
 def request_():
     return request_tokens(request)
+
+@app.route("/v1/get_id", methods=["GET"])
+@cross_origin()
+def request_id():
+    return get_id()
+
+@app.route("/v1/get_res/<id>", methods=["GET"])
+@cross_origin()
+def request_response(id):
+    return get_request_response(id)
+
 
 @app.route("/v1/post", methods=["POST"])
 @cross_origin()

@@ -21,3 +21,4 @@ def get_chain_():
     print(res)
 
 # get_chain_()
+test_login()

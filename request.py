@@ -4,7 +4,7 @@ import time
 from collections import defaultdict
 lock = threading.Lock()
 from blockchian_plugin import select_nodes
-from cache import set_id, get_cache, add_cache
+from cache import set_id, get_cache, add_cache, check_cache, set_start, set_finished, check_operation
 from check_post_content import check_image
 from common import format_docs, format_doc
 from posts import get_post_comments
@@ -30,6 +30,7 @@ def token_request_operation(data):
     request = data['request']
     body = data['body']
     id = data['id']
+    set_start(id)
     res = select_nodes(user_public_key)
     print(res)
     public_keys = res['public_keys']
@@ -77,30 +78,37 @@ def token_request_operation(data):
         "state": True,
         "guidance": "format_doc(guidance)"
     }
+    set_finished(id)
     add_cache(response_document, id)
     return
 
+def get_id():
+    id = set_id()
+    return {
+        'state':True,
+        'id':id
+    }
 def request_tokens(request):
     user_public_key = check_blockchain_registration(request)
     body = request.json
     id = body['id']
-    if id == 0:
-        id = set_id()
+    if not check_cache(id):
         data = {
             'id':id,
             'user_public_key':user_public_key,
             'request':request,
             'body':body
         }
-        t2 = threading.Thread(target=token_request_operation , args=(data,))
-        t2.start()
+        token_request_operation(data)
         return {
             "state": True,
             "id": id
         }
     else:
-        return get_cache(id)
+        return {}
 
+def get_request_response(id):
+    return get_cache(id)
 def get_requests(request):
     body = request.json
     public_key = body['public_key']
