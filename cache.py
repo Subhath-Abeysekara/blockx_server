@@ -12,16 +12,16 @@ def latest_id():
 def add_cache(response_doc , id):
     global cache
     print('add cache',response_doc)
-    cache[id]['response'] = response_doc
+    cache[int(id)]['response'] = response_doc
     return
 
 def get_cache(id):
     global cache
     print(cache)
     try:
-        response = cache[id]['response']
+        response = cache[int(id)]['response']
         print('cache', response)
-        del cache[id]
+        del cache[int(id)]
         return response
     except:
         print('cache error')
@@ -30,7 +30,7 @@ def get_cache(id):
 def check_cache(id):
     global cache
     try:
-        response = cache[id]['operation_started']
+        response = cache[int(id)]['operation_started']
         return response
     except:
         return False
@@ -38,7 +38,7 @@ def check_cache(id):
 def check_operation(id):
     global cache
     try:
-        response = cache[id]['operation_finished']
+        response = cache[int(id)]['operation_finished']
         return response
     except:
         return False
@@ -55,11 +55,11 @@ def set_id():
 
 def set_start(id):
     global cache
-    cache[id]['operation_started'] = True
+    cache[int(id)]['operation_started'] = True
     return
 
 def set_finished(id):
     global cache
-    cache[id]['operation_finished'] = True
+    cache[int(id)]['operation_finished'] = True
     return
 
