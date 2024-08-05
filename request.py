@@ -2,6 +2,9 @@ import datetime
 import threading
 import time
 from collections import defaultdict
+
+from bson import ObjectId
+
 lock = threading.Lock()
 from blockchian_plugin import select_nodes
 from cache import set_id, get_cache, add_cache, check_cache, set_start, set_finished, check_operation
@@ -11,11 +14,11 @@ from posts import get_post_comments
 from prediction import detect_comments
 from user import return_profile_data, return_user_data, check_blockchain_registration
 from user_account_score import user_acount_score_calculate
-from service.connection import connect_mongo_requests
+from service.connection import connect_mongo_requests , connect_mongo_post
 
 
 collection_name = connect_mongo_requests()
-
+collection_name_post = connect_mongo_post()
 def get_predictions(user_ids):
     scores = {}
     for user_id in user_ids:
@@ -80,6 +83,7 @@ def token_request_operation(data):
     }
     set_finished(id)
     add_cache(response_document, id)
+    collection_name_post.update_one({'_id':ObjectId(body['post_id'])},{'$set':{'eligibility':False}})
     return
 
 def get_id():
