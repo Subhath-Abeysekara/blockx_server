@@ -17,10 +17,11 @@ def add_cache(response_doc , id):
 
 def get_cache(id):
     global cache
+    print(cache)
     try:
         response = cache[id]['response']
+        print('cache', response)
         del cache[id]
-        print('cache',response)
         return response
     except:
         print('cache error')
