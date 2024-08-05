@@ -11,6 +11,7 @@ def latest_id():
 
 def add_cache(response_doc , id):
     global cache
+    print('add cache',response_doc)
     cache[id]['response'] = response_doc
     return
 
@@ -19,8 +20,10 @@ def get_cache(id):
     try:
         response = cache[id]['response']
         del cache[id]
+        print('cache',response)
         return response
     except:
+        print('cache error')
         return {}
 
 def check_cache(id):
