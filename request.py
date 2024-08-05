@@ -76,7 +76,7 @@ def token_request_operation(data):
     print(guidance)
     response_document =  {
         "state": True,
-        "guidance": "format_doc(guidance)"
+        "guidance": format_doc(guidance)
     }
     set_finished(id)
     add_cache(response_document, id)
